@@ -1,0 +1,311 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>笔试</title>
+        <meta charset="utf-8" />
+		<style>
+			#content{
+				width:1280px;
+				height:763px;
+				position:relative;
+				background:linear-gradient(to top,white, #3E567D)
+			}
+			#topdiv{
+				width:1280px;
+				height:68px;
+			}
+			#topdiv div{
+				float:left;
+			}
+			
+			.claclick{
+				background:#E5E7E8;
+				margin-left:15px;
+				height:38px;
+				line-height:38px;
+				width:165px;
+				border-radius:5px 5px 0 0;
+				text-align:center;
+				margin-top:29px;
+			}
+			.claunclick{
+				background:#A3B1C7;
+				margin-left:15px;
+				height:38px;
+				line-height:38px;
+				width:165px;
+				border-radius:5px 5px 0 0;
+				text-align:center;
+				margin-top:29px;
+			}
+			#bottomdiv{
+				width:1269px;
+				height:605px;
+				background:white;
+				border-top:10px solid #DEE0E2;
+				position:relative;
+				bottom:5px;
+				left:5px;
+				right:5px;
+				border-radius:3px 3px 0 0;
+			}
+			#leftchild,#rightchild{
+				float:left;
+				background:#E7EBEF
+			}
+			#leftchild div:nth-child(1){
+				text-align:center;
+				width:250px;
+				border-bottom:1px solid #CFD3D8;
+				margin:4px auto;
+			}
+			#leftchild{
+			height:100%;
+			}
+			#leftchild div:nth-child(2){
+				
+				width:250px;
+
+			}
+			#leftchild div:nth-child(2) button{
+				margin-left:35px;
+				margin-top:10px;
+				padding:3px 6px 3px 6px;
+				border-radius:5px;
+				background-color:#EFEFEF;
+				border:1px solid #9B9D9F;
+			}
+			#leftchild div:nth-child(2) button:nth-child(1){
+			
+				background-color:#518ED6
+			}
+			ul{
+				list-style:none;
+				padding:0;
+			}
+			#rebu .sel{
+				height:38px;
+				margin:0;
+				line-height:38px;
+				border:1px solid #CFD3D8;
+				padding-left:35px;
+				background:url('img/images/样例_04.jpg') no-repeat 10px 10px;
+			}
+			#rebu .unsel,h5{
+				height:38px;
+				margin:0;
+				line-height:38px;
+				border:1px solid #CFD3D8;
+				padding-left:35px;
+				background:url('img/images/样例_05.jpg') no-repeat 10px 10px;
+			}
+			#rebu li{
+				margin-left:50px;
+			}
+			#leftchild>ul>li>ul>li{
+				padding-left:50px;
+
+			}
+			#leftchild>ul>li>ul>li:nth-child(1){
+				font-weight:bold;
+			}
+			table{
+				border-collapse:collapse;
+				table-layout:fixed;
+				border:1px solid #DBDBDB;
+				text-align:center;
+			}
+			tr:nth-child(odd){
+				background-color:#FFFFFF;
+			}
+			tr:first-child{
+				background-color:#818997;
+			}
+			td{
+				border:1px solid #DBDBDB;
+			}
+			.a1{
+				color:black;
+			}
+			.a2{
+				color:black;
+				text-decoration:none;
+			}
+			textarea{
+				width:146px;
+			}
+			#rightchild_top{
+				height:38px;
+				background:white;
+			}
+			#rightchild_top button{
+				float:left;
+				margin:10px auto auto 15px;
+				width:80px;
+				border:1px solid #A9AAAE;
+				background-color:#E7E7E7;
+				border-radius:2px;
+			}
+			#rightchild_top input,#rightchild_top a{
+				float:right;
+				margin:10px 5px auto auto;
+				padding-left:3px;
+				border-radius:2px;
+			}
+			#b1{
+				background:url('img/images/样例_03.jpg') no-repeat 5px 2px
+			}
+			#b2{
+				background:url('img/images/样例_06.jpg') no-repeat 5px 2px
+			}
+		</style>
+    </head>
+    <body>
+      <div id="content">
+		<div id="topdiv">
+			<div class="claclick">开站管理</div>
+			<div class="claunclick">终端管理</div>
+		</div>
+		<div id="bottomdiv">
+			<div id="leftchild">
+				<div><bold>项目</bold></div>
+				<div>
+					<button >新建项目</button><button>删除项目</button>
+				</div>
+				<div id='rebu'>
+					<h5 class="sel">新建项目</h5><div><ul><li><b>开站文件</b></li><li>开站文件</li></ul></div>
+					<h5 >新建项目</h5>
+					<h5 >新建项目</h5>
+					<h5 >新建项目</h5>
+				</div>
+			</div>
+			<div id="rightchild">
+				<div id="rightchild_top">
+					<button id="b1">添加</button>
+					<button id="b2">删除</button>
+					
+					<a href="#">
+						<img src="img/images/img02.jpg"/>
+					</a>
+					<input placeholder="站点名称.."/>
+				</div>
+				<div id="del">
+					<table>
+						<tr>
+							<td width="73px" height="31px"><input type="checkbox"  id="checkall"/> </td>
+							<td width="202px">文件类型</td>
+							<td  width="265px">文件名称</td>
+							
+							<td width="193px">适用站点</td>
+							<td width="115px">制式</td>
+							<td width="105px">备注</td>
+						</tr>
+						
+						<tr height="30px">
+							<td><input type="checkbox" checked id="test1"/></td>
+							
+							<td>CA证书</td>
+							<td><a href="#" class="a1">file Name</a> <img class="s1" src="img/images/img03.jpg">  &nbsp&nbsp&nbsp <img class="s2" src="img/images/img04.jpg">  <a href="#" class="a2">上传</a></td>
+							<td>所有站点</td>
+							<td>SRAN</td>
+							
+							<td>
+								
+							</td>
+						</tr>
+						
+						<tr height="30px">
+							<td><input type="checkbox" /></td>
+							<td>CA证书</td>
+							<td><a href="#" class="a1">file Name</a> <img class="s1" src="img/images/img03.jpg">  &nbsp&nbsp&nbsp <img class="s2" src="img/images/img04.jpg">  <a href="#" class="a2">上传</a></td>
+							<td>所有站点</td>
+							<td>SRAN</td>
+							<td>
+								
+							</td>
+						</tr><tr height="30px">
+							<td><input type="checkbox" /></td>
+							<td>CA证书</td>
+							<td><a href="#" class="a1">file Name</a> <img class="s1" src="img/images/img03.jpg">  &nbsp&nbsp&nbsp <img class="s2" src="img/images/img04.jpg">  <a href="#" class="a2">上传</a></td>
+							<td>所有站点</td>
+							<td>SRAN</td>
+							<td>
+								
+							</td>
+						</tr><tr height="30px">
+							<td><input type="checkbox" /></td>
+							<td>CA证书</td>
+							<td><a href="#" class="a1">file Name</a> <img class="s1" src="img/images/img03.jpg">  &nbsp&nbsp&nbsp <img class="s2" src="img/images/img04.jpg">  <a href="#" class="a2">上传</a></td>
+							<td>所有站点</td>
+							<td>SRAN</td>
+							<td>
+								
+							</td>
+						</tr><tr height="30px">
+							<td><input type="checkbox" /></td>
+							<td>CA证书</td>
+							<td><a href="#" class="a1">file Name</a> <img class="s1" src="img/images/img03.jpg">  &nbsp&nbsp&nbsp <img class="s2" src="img/images/img04.jpg">  <a href="#" class="a2">上传</a></td>
+							<td>所有站点</td>
+							<td>SRAN</td>
+							<td>
+								
+							</td>
+						</tr><tr height="30px">
+							<td><input type="checkbox" /></td>
+							<td>CA证书</td>
+							<td><a href="#" class="a1">file Name</a> <img class="s1" src="img/images/img03.jpg">  &nbsp&nbsp&nbsp <img class="s2" src="img/images/img04.jpg">  <a href="#" class="a2">上传</a></td>
+							<td>所有站点</td>
+							<td>SRAN</td>
+							<td>
+								
+							</td>
+						</tr>
+						<tr height="30px">
+							<td><input type="checkbox" /></td>
+							<td>
+								<select>
+									<option selected>CA证书</option>
+									<option>CA证书1</option>
+									<option>CA证书2</option>
+									<option>CA证书3</option>
+								</select>
+							</td>
+							<td><a href="#" class="a1">file Name</a> <img class="s1" src="img/images/img03.jpg">  &nbsp&nbsp&nbsp <img class="s2" src="img/images/img04.jpg">  <a href="#" class="a2">上传</a></td>
+							<td>
+								<select>
+									<option selected>所有站点</option>
+									<option>所有站点1</option>
+									<option>所有站点2</option>
+									<option>所有站点3</option>
+								</select>
+							</td>
+							<td>
+								<select>
+									<option >SRAN</option>
+									<option>SRAN1</option>
+									<option>SRAN2</option>
+									<option>SRAN3</option>
+								</select>
+							</td>
+							<td>
+								<!--
+								
+								<textarea>
+								</textarea>
+								应该用可以输入的标签
+								-->
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	  </div>
+      <script src="js/jquery-1.11.3.js"></script>
+      <script src="js/softStone.js" charset="utf-8" type="text/javascript"></script>
+	  <script>
+		
+	  </script>
+    </body>
+
+</html>
